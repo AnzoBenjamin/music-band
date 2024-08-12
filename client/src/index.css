@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: MyHelvetica;
+  src: url("/fonts/HelveticaCompressed.otf") format("opentype");
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: MyHelveticaNeue;
+  src: url("/fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: MyHelveticaNeue;
+  src: url("/fonts/HelveticaNeueBlack.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: MyHelveticaNeue;
+  src: url("/fonts/HelveticaNeueHeavy.otf") format("opentype");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: MyHelveticaNeue;
+  src: url("/fonts/HelveticaNeueLight.otf") format("opentype");
+  font-weight: light;
+}
+
+
+
+@font-face {
+  font-family: MyHelvetica;
+  src: url("/fonts/Helvetica.ttf") format("truetype");
+  font-stretch: normal;
+}
+
+@layer utilities {
+  .font-condensed {
+    font-stretch: condensed;
+  }
+}
