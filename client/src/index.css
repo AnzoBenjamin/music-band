@@ -45,4 +45,35 @@
   .font-condensed {
     font-stretch: condensed;
   }
+  .icon-pulsate{
+  transition-property: transform;
+  animation-iteration-count: infinite;
+  transition-duration: 1s;
+  animation-name: pulsate;
+  animation-duration: 1.5s;
+  timing-function: linear;
+  transition-property: background;
+  transition-duration: 1s;
+  border-radius: 50%;
+  }
+  .icon-pulsate:hover{
+    background: rgba(255, 255, 255, 0.1);
+  }
+  @keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 }
