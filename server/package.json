@@ -1,0 +1,45 @@
+{
+  "name": "music-band",
+  "version": "1.0.0",
+  "description": "A web application advertising a band. With booking and music streaming capabilities.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "watch": "tsc --watch",
+    "dev": "nodemon ./dist/server.js",
+    "start": "npm run compile && node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnzoBenjamin/music-band.git"
+  },
+  "keywords": [
+    "music",
+    "streaming",
+    "music-streaming",
+    "nodejs",
+    "reactjs",
+    "fullstack"
+  ],
+  "author": "Anzo Benjamin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnzoBenjamin/music-band/issues"
+  },
+  "homepage": "https://github.com/AnzoBenjamin/music-band#readme",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "graphql": "^16.9.0",
+    "graphql-passport": "^0.6.8",
+    "mongoose": "^8.5.2",
+    "passport": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0"
+  }
+}
